@@ -1,20 +1,20 @@
-class Blue {
+class Red {
   int quantity = 0;
 
-  Blue operator +(Blue other) {
-    var result = Blue();
+  Red operator +(Red other) {
+    var result = Red();
     result.quantity = quantity + other.quantity;
     return result;
   }
 }
 
 void main() {
-  var blue1 = Blue();
-  blue1.quantity = 10;
+  var red1 = Red();
+  red1.quantity = 10;
 
-  var blue2 = Blue();
-  blue2.quantity = 10;
+  var red2 = Red();
+  red2.quantity = 10;
 
-  var blue3 = blue1 + blue2;
-  print(blue3.quantity);
+  var red3 = red1 + red2;
+  print(red3.quantity);
 }
